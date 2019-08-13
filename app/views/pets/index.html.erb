@@ -1,0 +1,16 @@
+<div class="container">
+  <ul>
+    <% @pets.each do |pet| %>
+    <li>
+      <h1><%= link_to pet.name, pet_path(pet) %></h1>
+      <h2><%= pet.species %></h2>
+      <h2>Found <%= pet.found_days_ago %> days ago</h2>
+      <%= link_to "edit", edit_pet_path(pet) %>
+    </li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Add a pet", new_pet_path, class: "btn btn-primary" %>
+
+</div>
+

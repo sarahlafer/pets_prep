@@ -1,5 +1,7 @@
 {
   "name": "pets_prep",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
